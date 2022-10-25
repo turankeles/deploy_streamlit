@@ -8,7 +8,7 @@ data=data[data.make_model!="Audi A2"]
 data=data[data.make_model!="Renault Duster"]
 
 car_counts=st.selectbox("Plots",["Car Ages","Price","Consumption"])
-model=pickle.load(open("model","rb"))
+model=pickle.load(open("rf_model","rb"))
 lr_model=pickle.load(open("lr_model","rb"))
 
 col_transformer=pickle.load(open("col_transformer","rb"))
